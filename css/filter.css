@@ -1,0 +1,25 @@
+.container {
+  overflow: hidden;
+}
+
+.filterDiv {
+  display: none;
+  margin: 0px;
+  padding: 0px;
+  background: none;
+
+}
+
+
+
+div {
+  position: relative;
+  -webkit-animation: mymove 0.4s ; /* Safari 4.0 - 8.0 */
+  animation: mymove 0.4s ;
+}
+
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}

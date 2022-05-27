@@ -1,0 +1,40 @@
+.row-epk{
+  max-width:1100px;
+  height:auto;
+
+}
+.column1-epk {
+    float: left;
+    padding: 10px;
+    width:60%;
+    box-sizing:border-box;
+}
+.column2-epk {
+    float: left;
+    padding: 10px;
+    width:40%;
+    box-sizing:border-box;
+}
+
+.row-epk:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 890px) {
+
+.column1-epk {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    height:auto;
+    box-sizing:content-box;
+}
+.column2-epk {
+    float: left;
+    width: 100%;
+    padding: 10px;
+    height:auto;
+    box-sizing: content-box;
+}

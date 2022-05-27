@@ -1,0 +1,11 @@
+body {
+    background-color:black;
+    font-family: 'Jura', sans-serif;
+    image-orientation: right;
+    background-repeat:no-repeat;
+    background-size:50%;
+  background-attachment: fixed;
+  background-position:top right;
+    margin: 0;
+    padding: 0;
+}

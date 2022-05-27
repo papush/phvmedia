@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<title>PHV Media | Photographer in Groningen</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="mobile-web-app-capable" content="yes">
+<meta charset="utf-8">
+
+<!-- bootstrap carousel -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="css/gallery.css">
+<link rel="stylesheet" href="css/bodempty.css">
+<link rel="stylesheet" href="css/sticky.css">
+
+<link rel="stylesheet" href="css/filter.css">
+<link rel="stylesheet" href="css/media.css?1">
+<link rel="stylesheet" href="css/overlay.css">
+<link rel="stylesheet" href="css/portfolio.css">
+<link rel="stylesheet" href="css/pstyle.css">
+
+<link rel="canonical" href="https://pablohellmund.com/arte" />
+<script type="text/javascript" src="js/overlay.js"></script>
+<script type="text/javascript" src="js/filtro.js"></script>
+<script type="text/javascript" src="js/accordion.js"></script>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&family=Jolly+Lodger&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <div hidden align="center" class="avatario">
+    <div class="avatar">
+      <img src="img/avatar-papz.png" alt="Avatar" class="avatar">
+    </div>
+    <p class="pablo2">Pablo Hellmund</p>
+  </div>
+
+<div align="center">
+  <div class="topbanner">
+    <img src="img/phvmedia2.png" class="logo" alt="PHV media">
+
+      <div hidden class="card pitch">
+      </div>
+      <nav class="media" id="navi">
+        <ul>
+          <a href="index.html"><li>Home</li></a>
+          <div class="dropdown">
+            <span><a href="index.html#services"><li class="active">Services</li></a></span>
+            <div class="dropdown-content">
+              <a href="videography.html#filt"><li>Videography</li></a>
+              <a href="photography.html#filt"><li>Photography</li></a>
+              <a href="#"><li>Content Planning</li></a>
+            </div>
+          </div>
+          <a href="pricing.html"><li>Pricing</li></a>
+          <a hidden href="dev.html"><li>Shop</li></a>
+          <a href="about.html#navi"><li>About</li></a>
+          <span onclick="openNav1()" style="cursor:pointer"><li style="color:#02B7E3;font-weight:bold;">Contact</li></span>
+        </ul>
+      </nav>
+  </div>
+
+
+  <!-- CONTENT -->
+
+
+<div align="center">
+  <div hidden class="window1">
+    <div align="left" style="font-size:130%;max-width:800px;text-align:center;">
+    <br>
+      <p class="pitch">Freelance Photographer based in Groningen, NL. <br><br> I like to capture people, food, businesses and their products! <br></p>
+    </div>
+  </div>
+
+  <div class=container>
+        <section>
+
+
+
+
+          <br>
+        </section>
+
+
+  </div>
+  <button hidden class="accordion">Photography</button>
+  <div align=left class="panel" style="text-align:center">
+  </div>
+    <h1 id="filt">Photography</h1><br>
+    <div  style="max-width:100%;margin-bottom:0px;text-align:center;position:sticky;top:0;z-index:+1;background-color:black;padding-bottom:4px;" class="filter" id="myBtnContainer">
+      <button class="btn activo" onclick="filterSelection('filterDiv')">All</button>
+      <button class="btn" onclick="filterSelection('events')">Events</button>
+      <button class="btn" onclick="filterSelection('music')">Music</button>
+      <button class="btn" onclick="filterSelection('food')">Food</button>
+      <button class="btn" onclick="filterSelection('horeca')">Horeca</button>
+      <button class="btn" onclick="filterSelection('commercial')">Corporate</button>
+      <button hidden class="btn" onclick="filterSelection('portrait')">Portrait</button>
+      <button class="btn" onclick="filterSelection('pets')">Pets & Animals</button>
+    </div>
+
+  <div class="container" id="Container" style="max-width:100%;margin:0px;padding:0px;text-align:center">
+    <div class="roww">
+      <div class="column">
+        <img id="div2" class="filterDiv horeca food"src="img/portfolio/food_photographer_groningen_1.jpg" width="100%"alt="photo">
+        <img id="div2" class="filterDiv events people"src="img/portfolio/event_photographer_groningen_15.JPG" width="100%"alt="photo">
+        <img id="div2" class="filterDiv horeca food"src="img/portfolio/food_photographer_groningen_4.jpg" width="100%"alt="photo">
+        <img id="div2" class="filterDiv events people"src="img/portfolio/event_photographer_groningen_12.JPG" width="100%"alt="photo">
+        <img id="div2" class="filterDiv horeca food"src="img/portfolio/food_photographer_groningen_2.jpg" width="100%"alt="photo">
+        <img id="div2" class="filterDiv music"src="img/portfolio/music_muziek_photographer_fotograaf_groningen_01.JPG" width="100%"alt="photo">
+        <img id="div2" class="filterDiv horeca food"src="img/portfolio/food_photographer_groningen_5.JPG" width="100%"alt="photo">
+        <img id="div2" class="filterDiv horeca people"src="img/portfolio/horeca_fotograaf_groningen_1.jpg" width="100%"alt="photo">
+        <img id="div2" class="filterDiv horeca people"src="img/portfolio/horeca_fotograaf_groningen_2.jpg" width="100%"alt="photo">
+        <img id="div2" class="filterDiv pets"src="img/portfolio/pet_dieren_photography_fotograaf_groningen_3.JPG" width="100%"alt="photo">
+        <img id="div2" class="filterDiv events people"src="img/portfolio/event_photographer_groningen_9.JPG" width="100%"alt="photo">
+        <img id="div2" class="filterDiv events people"src="img/portfolio/event_photographer_groningen_11.JPG" width="100%"alt="photo">
+        <img id="div2" class="filterDiv events people"src="img/portfolio/event_photographer_groningen_13.JPG" width="100%"alt="photo">
+        <img id="div2" class="filterDiv pets"src="img/portfolio/pet_dieren_photography_fotograaf_groningen_4.JPG" width="100%"alt="photo">
+        <img id="div2" class="filterDiv horeca food"src="img/portfolio/food_photographer_groningen_3.jpg" width="100%"alt="photo">
+        <img id="div2" class="filterDiv pets"src="img/portfolio/pet_dieren_photography_fotograaf_groningen_5.JPG" width="100%"alt="photo">
+        <img id="div2" class="filterDiv events people"src="img/portfolio/event_photographer_groningen_10.JPG" width="100%"alt="photo">
+        <img id="div2" class="filterDiv music"src="img/portfolio/music_muziek_photographer_fotograaf_groningen_0.JPG" width="100%"alt="photo">
+        <img id="div2" class="filterDiv events people"src="img/portfolio/event_photographer_groningen_8.JPG" width="100%"alt="photo">
+
+      </div>
+
+      <div class="column">
+          <img id="div2" class="filterDiv events people"src="img/portfolio/event_photographer_groningen_0.JPG" width="100%"alt="photo">
+          <img id="div2" class="filterDiv pets"src="img/portfolio/pet_dieren_photography_fotograaf_groningen_2.JPG" width="100%"alt="photo">
+          <img id="div2" class="filterDiv events people"src="img/portfolio/event_photographer_groningen_3.JPG" width="100%"alt="photo">
+          <img id="div2" class="filterDiv events people"src="img/portfolio/event_photographer_groningen_6.JPG" width="100%"alt="photo">
+          <img id="div2" class="filterDiv horeca food"src="img/portfolio/food_photographer_groningen_7.JPG" width="100%"alt="photo">
+          <img id="div2" class="filterDiv horeca people"src="img/portfolio/horeca_fotograaf_groningen_4.jpg" width="100%"alt="photo">
+          <img id="div2" class="filterDiv events people"src="img/portfolio/event_photographer_groningen_5.JPG" width="100%"alt="photo">
+          <img id="div2" class="filterDiv events people"src="img/portfolio/event_photographer_groningen_7.JPG" width="100%"alt="photo">
+          <img id="div2" class="filterDiv horeca food"src="img/portfolio/food_photographer_groningen_6.JPG" width="100%"alt="photo">
+          <img id="div2" class="filterDiv horeca food"src="img/portfolio/food_photographer_groningen_8.JPG" width="100%"alt="photo">
+          <img id="div2" class="filterDiv horeca food"src="img/portfolio/food_photographer_groningen_10.JPG" width="100%"alt="photo">
+          <img id="div2" class="filterDiv pets"src="img/portfolio/pet_dieren_photography_fotograaf_groningen_1.JPG" width="100%"alt="photo">
+          <img id="div2" class="filterDiv events people"src="img/portfolio/event_photographer_groningen_1.JPG" width="100%"alt="photo">
+          <img id="div2" class="filterDiv horeca food"src="img/portfolio/food_photographer_groningen_0.JPG" width="100%"alt="photo">
+          <img id="div2" class="filterDiv events people"src="img/portfolio/event_photographer_groningen_4.JPG" width="100%"alt="photo">
+          <img id="div2" class="filterDiv horeca food"src="img/portfolio/food_photographer_groningen_9.JPG" width="100%"alt="photo">
+        <img id="div2" class="filterDiv pets"src="img/portfolio/pet_dieren_photography_fotograaf_groningen_0.JPG" width="100%"alt="photo">
+        <img id="div2" class="filterDiv horeca people"src="img/portfolio/horeca_fotograaf_groningen_3.jpg" width="100%"alt="photo">
+                <img id="div2" class="filterDiv music"src="img/portfolio/music_muziek_photographer_fotograaf_groningen_02.JPG" width="100%"alt="photo">
+
+
+
+      </div>
+    </div>
+  </div>
+
+<!-- arriba panel -->
+
+
+</div>
+
+<div class="fixed">
+
+</div>
+
+<div class="bottom">
+<nav hidden class="bottom">
+  <ul class="bottom">
+    <li class="bottom">Sound Design</li>
+    <li class="bottom">Public Speaking</li>
+    <li class="bottom">Permaculture</li>
+    <li class="bottom">Construction</li>
+    <li class="bottom">Activism</li>
+  </ul>
+</div>
+</nav>
+
+<div id="myNav1" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+          <div class="overlay-content">
+            <h1 class="overlad" style="color:white;font-size:300%">Contact Me:</h1>
+            <div class="bubble">
+            <p>There's several ways to reach me</p>
+            <ul class="nobullets">
+              <li><address><a class="address" href="mailto:media@pablohellmund.com">media@pablohellmund.com</a></address></li>
+              <li><address><a class="address" href="tel:+31644459893">+31 6 4445 9893</a></address></li>
+            </ul>
+            </div>
+
+            <table class="compulio" style="max-width:300px;">
+               <tr>
+                <td><a target="_blank" href="https://t.me/DrPapz"><img class="sm2" src="img/tele.png" alt="telegram"></a></td>
+                <td><a target="_blank" href="mailto:media@pablohellmund.com"><img class="sm2" src="img/gmail.png" alt="email"></a></td>
+                <td><a target="_blank" href="https://wa.me/31644459893"><img class="sm2" src="img/whats.png" alt="Whatsapp"></a></td>
+              </tr>
+            </table>
+
+            <table class="mobilio" style="max-width:300px;">
+               <tr>
+                <td><a target="_blank" href="https://t.me/DrPapz"><img class="sm3" src="img/tele.png" alt="telegram"></a></td>
+                <td><a target="_blank" href="mailto:media@pablohellmund.com"><img class="sm3" src="img/gmail.png" alt="email"></a></td>
+                <td><a target="_blank" href="https://wa.me/31644459893"><img class="sm3" src="img/whats.png" alt="Whatsapp"></a></td>
+              </tr>
+            </table>
+            <p style="color:gray;font-size:100%"><strong>KVK:</strong> 84088907 <br>
+            <strong>BTW:</strong> NL003913528B88</p>
+
+        </div>
+</div>
+
+<div class="footer" style="margin-top: 5px">
+
+
+<p class="gray"> </p>
+
+<button class="green" value="Contact me" class="button"><span onclick="openNav1()" style="cursor:pointer">Contact me</span></button>
+
+<p style="color:gray;font-size:100%"><strong>KVK:</strong> 84088907 <br>
+<strong>BTW:</strong> NL003913528B88</p>
+<p style="color:gray">©Pablo Hellmund 2021. All Rights Reserved.</p>
+</div>
+
+
+<script type="text/javascript">
+
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("activo");
+    current[0].className = current[0].className.replace(" activo", "");
+    this.className += " activo";
+  });
+}
+
+</script>
+<script type="text/javascript" src="js/accordion.js"></script>
+</body>
+
+</html>
