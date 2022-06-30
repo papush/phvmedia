@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+.prices {
+  list-style-type: none;
+  border: 1px solid #242424;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.prices:hover {
+  box-shadow: 0 8px 12px 0 #028EB1;
+}
+
+.prices .header {
+  background-color: #111;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.prices li {
+  border-bottom: 1px solid #242424;
+  padding: 20px;
+  font-size: 115%;
+  text-align: center;
+}
+
+.prices .grey {
+  background-color: #3D3D3D;
+  font-size: 30px;
+}
+
+.buttons {
+  background-color: #028EB1;
+  border: none;
+  color: black;
+  border-radius: 10px;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 22px;
+}
+
+.buttons:hover {
+background-color: #0ACEFD;
+color:black;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}

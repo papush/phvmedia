@@ -3,6 +3,7 @@
 }
 html, body{
  height:100%;
+ color: #a3a3a3;
 }
 
 #container {
@@ -417,25 +418,13 @@ input, select, textarea{
 }
 
 
-input[type=text] {
+
+input[type=email], input[type=text] {
   max-width:200px;
   padding: 12px 20px;
   margin: 8px 0;
   background: black;
-  color:grey;
-  display: inline-block;
-  border-bottom: 1px solid #2EFF4D;
-  border-top: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-  border-radius: 15px;
-  box-sizing: border-box;
-}
-input[type=email] {
-  max-width:200px;
-  padding: 12px 20px;
-  margin: 8px 0;
-  background: black;
+  color:gray;
   display: inline-block;
   border-bottom: 1px solid #2EFF4D;
   border-top: 1px solid black;
@@ -447,7 +436,7 @@ input[type=email] {
 
 button[type=submit] {
   width: 120px;
-  background-color: #2EFF4D;
+  background-color: #028EB1;
   color: black;
   font-size: 120%;
   padding: 7px 5px;
@@ -459,7 +448,12 @@ button[type=submit] {
 }
 
 button[type=submit]:hover {
-  background-color: #62FF79;
+  background-color: #02BBE8;
+}
+
+#message {
+  min-height: 300px;
+  overflow: scroll;
 }
 
 button.green {
@@ -531,11 +525,13 @@ div.lang:hover{
 div.bio{
   font-size: 100%;
   word-wrap: break-word;
+  color:#808080;
 }
 
 div.bio2{
   font-size: 100%;
   word-wrap: break-word;
+  color:#808080;
 }
 
 
