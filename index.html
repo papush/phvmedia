@@ -41,8 +41,7 @@
   <div class="topbanner">
     <img src="img/phvmedia2.png" class="logo" alt="PHV media">
 
-      <div hidden class="card pitch">
-      </div>
+
       <nav class="media" id="navi" style="position:sticky;top:0;">
         <ul>
           <a href="index.html"><li class="active">Home</li></a>
@@ -58,6 +57,7 @@
           <a hidden href="dev.html"><li>Shop</li></a>
           <a href="about.html#navi"><li>About</li></a>
           <a href="contact.html#navi"><li style="color:#02B7E3;font-weight:bold;">Contact</li></a>
+          <a onclick="mobNav()" class="mobilio" style="font-size:22px;right:25px;">&#9776;</a>
         </ul>
       </nav>
   </div>
@@ -170,13 +170,13 @@
     <div class="welcome">
           <h1>Contact</h1>
           <div class="contactinfo">
-            <div><a class="contak" href="mailto:media@pablohellmund.com"><img src="img/email.png" style="max-width:40px;" alt=""> media@pablohellmund.com</a></div>
+            <div><a class="contak" href="mailto:hello@phv.media"><img src="img/email.png" style="max-width:40px;" alt=""> hello@phv.media</a></div>
             <div><a class="contak" href="tel:+31644459893"><img src="img/telephone.png" style="max-width:40px;" alt=""> +31 6 4445 9893</a></div>
             <div><a class="contak" onclick="copyKvk()" style="cursor:pointer;"><img src="img/kvk.png" style="max-width:40px;" alt="KVK_nummer"><strong> KVK:</strong> 84088907</a></div>
             <div><a class="contak" onclick="refreshIframe()" style="cursor:pointer;"><img src="img/location.png" style="max-width:40px;" alt="location"><strong> Current Location:</strong> Groningen, NL</a></div>
           </div>
 
-          <form action="contact.php" method="post" style="text-align:left;" spellcheck="false">
+          <form style="text-align:left;" spellcheck="false" netlify>
             <h2>Quick Question?<br>Send it here:</h2>
 
             <input type="text" id="client" name="first_name" value="" placeholder="Full Name">
