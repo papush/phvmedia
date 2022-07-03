@@ -1565,7 +1565,9 @@ div.height {
 
 @media screen and (max-width: 500px){
 
-
+  div.bio{
+    padding:0px 3px;
+  }
 
   h1 {
     font-family:Georgia;
