@@ -12,13 +12,13 @@ body {margin:0;}
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 22px;
 }
 
 .actif {
   background-color:;
   color: white;
-  border-bottom:2px solid #028EB1;
+  border-bottom:1px solid #028EB1;
 }
 
 .topnav .icon {
@@ -31,7 +31,7 @@ body {margin:0;}
 }
 
 .drupdown .drupbtn {
-  font-size: 17px;
+  font-size: 22px;
   border: none;
   outline: none;
   color: white;
@@ -85,7 +85,11 @@ body {margin:0;}
     float: none;
     display: block;
     text-align: right;
-    background-color: rgb(0, 0, 0, 0.5)
+    background-color: rgb(0, 0, 0, 0)
+  }
+
+  .topnav a.icon:hover {
+      text-shadow: 0px 0px 0px white, 0 0 2em #0ACEFD, 0 0 0.10em #0ACEFD;
   }
 }
 
