@@ -32,6 +32,26 @@
 
 <body>
 
+<style media="screen">
+
+nav ul li {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-right: 25px;
+  font-size: 150%;
+}
+
+nav ul{
+padding: 0px;
+margin: 0px;
+}
+
+nav.media{
+  max-height: none;
+  margin-left: 0px;
+}
+</style>
 
 <div align="center">
   <div class="topbanner">
@@ -39,22 +59,28 @@
 
 
       <nav class="media" id="navi" style="position:sticky;top:0;">
-        <ul>
-          <a href="index.html"><li class="active">Home</li></a>
-          <div class="dropdown">
-            <span><a href="index.html#services"><li>Services</li></a></span>
-            <div class="dropdown-content">
-              <a href="videography.html#filt"><li>Videography</li></a>
-              <a href="photography.html#filt"><li>Photography</li></a>
-              <a href="contentplanning.html"><li>Content Planning</li></a>
-            </div>
-          </div>
-          <a href="pricing.html#navi"><li>Pricing</li></a>
-          <a hidden href="dev.html"><li>Shop</li></a>
-          <a href="about.html#navi"><li>About</li></a>
-          <a href="contact.html#navi"><li style="color:#02B7E3;font-weight:bold;">Contact</li></a>
-        </ul>
+
       </nav>
+
+      <div class="topnav mobilio" id="myTopnav">
+        <a href="#" class="actif" style="color:rgb(0,0,0,0);">-</a>
+        <a hidden href="index.html">Home</a>
+        <div class="drupdown">
+          <button class="drupbtn">Services
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="drupdown-content">
+            <a href="videography.html#filt">Videography</a>
+            <a href="photography.html#filt">Photography</a>
+            <a href="contentplanning.html">Content Planning</a>
+          </div>
+        </div>
+
+        <a href="pricing.html#navi">Pricing</a>
+        <a href="about.html#navi">About</a>
+        <a href="contact.html#navi" style="color:#02B7E3;font-weight:bold;">Contact</a>
+        <a href="javascript:void(0);" style="font-size:25px;color:#02BBE8" class="icon" onclick="mobNav()">&#9776;</a>
+      </div>
   </div>
 
 

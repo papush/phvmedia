@@ -956,6 +956,14 @@ a.text {
   font-weight:600;
 }
 
+a.mobnav {
+  background-color: lightblue;
+  padding: 5px;
+  color:white;
+  font-size:22px;
+  right:25px;
+}
+
 a.text:hover {
   color:white;
   text-shadow: 0px 0px 0px white, 0 0 2em white, 0 0 0.10em white;
@@ -1406,7 +1414,7 @@ button.accordion.active, button.accordion:hover {
 @media screen and (max-width: 890px){
 
   div.topbanner nav ul li {
-
+    /* display: none; */
   }
 
   #column1pricing{
@@ -1600,12 +1608,9 @@ div.height {
   }
 
 
-
-
   div.box{
 
   }
-
 
     div.welcome {
       margin-left: 5%;
