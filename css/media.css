@@ -163,8 +163,7 @@ div.window{
   background-position:center;
   background-blend-mode: multiply;
   width: 100%;
-  margin-right:0px;
-  margin-left: 0px;
+  margin: 0px 0px;
   padding: 20px 0px;
   min-height: 50px;
   overflow: hidden;
@@ -1411,6 +1410,10 @@ button.accordion.active, button.accordion:hover {
 
 
 @media screen and (max-width: 890px){
+
+div.window {
+    margin: 50px 0px;
+}
 
   div.topbanner nav ul li {
     /* display: none; */
