@@ -91,9 +91,9 @@
             <h1>Contact</h1>
             <div class="contactinfo">
               <div><a class="contak" href="mailto:hello@phv.media"><img src="img/email.png" style="max-width:40px;" alt=""> hello@phv.media</a></div>
-              <div><a class="contak" href="tel:+31644459893"><img src="img/telephone.png" style="max-width:40px;" alt=""> +31 6 4445 9893</a></div>
-              <div><a class="contak" onclick="copyKvk()" style="cursor:pointer;"><img src="img/kvk.png" style="max-width:40px;" alt="KVK_nummer"><strong> KVK:</strong> 84088907</a></div>
-              <div><a class="contak" onclick="refreshIframe()" style="cursor:pointer;"><img src="img/location.png" style="max-width:40px;" alt="location"><strong> Current Location:</strong> Groningen, NL</a></div>
+              <div><a class="contak" href="tel:+50683292246"><img src="img/telephone.png" style="max-width:40px;" alt=""> +506 8329 2246</a></div>
+              <div hidden><a class="contak" onclick="copyKvk()" style="cursor:pointer;"><img src="img/kvk.png" style="max-width:40px;" alt="KVK_nummer"><strong> KVK:</strong> 84088907</a></div>
+              <div><a class="contak" onclick="refreshIframe()" style="cursor:pointer;"><img src="img/location.png" style="max-width:40px;" alt="location"><strong> Current Location:</strong> Monteverde, CR</a></div>
             </div>
 
             <form netlify style="text-align:left;" spellcheck="false">
@@ -111,14 +111,21 @@
     </div>
 
     <div class="column2" id="columnmap" style="margin:0px;padding:0px;">
-      <!-- NL Map -->
-        <div class="map2" style="filter:grayscale(100%)">
-          <iframe name="map" id="mapiframe" style="pointer-events:none;filter:invert(97%)" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=6.462879180908203%2C53.186287573913305%2C6.6544532775878915%2C53.244262570178755&amp;layer=transportmap" style="border: 1px solid black"></iframe>
-        </div>
+
+
+      <!-- MV Map -->
+      <div class="map2" style="filter:grayscale(100%)">
+        <iframe name="map" id="mapiframe" style="pointer-events:none;filter:invert(97%)" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-84.83797073364258%2C10.3115837486629%2C-84.81402397155763%2C10.32289909834693&amp;layer=transportmap" style="border: 1px solid black"></iframe>
+      </div>
 
         <!-- Costa Rica MAP -->
-          <div hidden style="filter:grayscale(100%)">
-              <iframe name="map" id="contactheight" style="filter:invert(100%)"width="100%" height="300px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-85.37200927734376%2C9.91474384324173%2C-84.32006835937501%2C10.676802582247122&amp;layer=transportmap" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=10/10.2960/-84.8460&amp;layers=T">View Larger Map</a></small>
+          <div  hidden class="map2" style="filter:grayscale(100%)">
+              <iframe name="map" id="contactheight" style="filter:invert(100%)"width="100%" height="300px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-85.37200927734376%2C9.91474384324173%2C-84.32006835937501%2C10.676802582247122&amp;layer=transportmap" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=15/10.3183/-84.8293&amp;layers=T">View Larger Map</a></small>
+          </div>
+
+          <!-- NL Map -->
+          <div hidden class="map2" style="filter:grayscale(100%)">
+            <iframe name="map" id="mapiframe" style="pointer-events:none;filter:invert(97%)" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=6.462879180908203%2C53.186287573913305%2C6.6544532775878915%2C53.244262570178755&amp;layer=transportmap" style="border: 1px solid black"></iframe>
           </div>
 
     </div>
@@ -135,16 +142,18 @@
 
 <div class="footer" style="margin-top: 5px">
   <p class="gray"> </p>
-    <button hidden class="blue" value="Contact me" class="button"><span onclick="openNav1()" style="cursor:pointer">Contact</span></button><br><br>
+    <button class="blue" value="Contact me" class="button">
+      <span onclick="location.href='contact.html#navi';" style="cursor:pointer">Contact</span>
+    </button><br><br>
 
     <a target="_blank" href="https://instagram.com/phv.media"><img class="sm" src="img/insta.png" alt="instagram"></a>
       <a target="_blank" href="https://www.linkedin.com/in/pablo-hellmund-a1305373/"><img class="sm" src="img/linked.png" alt="linkedin"></a>
       <a target="_blank" href="https://t.me/drpapz"><img class="sm" src="img/teleg.png" alt="telegram"></a>
       <a hidden target="_blank" href=""><img class="sm" src="img/yout.png" alt="youtube"></a>
 
-    <p style="color:gray;font-size:100%"><strong>KVK:</strong> 84088907 <br>
+    <p hidden style="color:gray;font-size:100%"><strong>KVK:</strong> 84088907 <br>
     <strong>BTW:</strong> NL003913528B88</p>
-    <p style="color:gray">©PHV Media 2022. All Rights Reserved.</p>
+    <p style="color:gray">©PHV Media 2023. All Rights Reserved.</p>
 </div>
 
 <script type="text/javascript">
