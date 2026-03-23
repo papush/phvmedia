@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<title>PHV Media | Fotógrafo en Monteverde Costa Rica</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="mobile-web-app-capable" content="yes">
+<meta charset="utf-8">
+
+<!-- bootstrap carousel -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="../css/gallery.css">
+<link rel="stylesheet" href="../css/bodempty.css">
+<link rel="stylesheet" href="../css/sticky.css">
+
+<link rel="stylesheet" href="../css/filter.css">
+<link rel="stylesheet" href="../css/media.css?1">
+<link rel="stylesheet" href="../css/overlay.css">
+<link rel="stylesheet" href="../css/portfolio.css">
+<link rel="stylesheet" href="../css/pstyle.css">
+<link rel="stylesheet" href="../css/mobnav.css">
+<link rel="canonical" href="https://pablohellmund.com/arte" />
+
+<script type="text/javascript" src="../js/mobnav.js"></script>
+<script type="text/javascript" src="../js/overlay.js"></script>
+<script type="text/javascript" src="../js/filtro.js"></script>
+<script type="text/javascript" src="../js/accordion.js"></script>
+
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+Double+Pica+SC&family=Jolly+Lodger&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Jura:wght@300&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- HEADER -->
+
+  <div hidden align="center" class="avatario">
+    <div class="avatar">
+      <img src="../img/avatar-papz.png" alt="Avatar" class="avatar">
+    </div>
+    <p class="pablo2">Pablo Hellmund</p>
+  </div>
+
+<div align="center">
+  <div class="topbanner">
+    <img src="../img/phvmedia2.png" class="logo" alt="PHV media">
+
+      <div hidden class="card pitch">
+      </div>
+      <nav class="media" id="navi">
+        <ul>
+          <a href="index.html"><li>Startseite</li></a>
+          <div class="dropdown">
+            <span><a href="index.html#services"><li class="active">Leistungen</li></a></span>
+            <div class="dropdown-content">
+              <a href="videography.html#filt"><li>Videografie</li></a>
+              <a href="photography.html#filt"><li  class="active">Fotografie</li></a>
+            </div>
+          </div>
+          <a href="pricing.html#navi"><li>Preise</li></a>
+          <a href="about.html#navi"><li>Über mich</li></a>
+          <a href="contact.html#navi"><li style="color:#02B7E3;font-weight:bold;">Kontakt</li></a>
+        </ul>
+      </nav>
+
+      <div class="topnav" id="nav">
+        <a href="index.html">Startseite</a>
+        <div class="drupdown">
+          <button class="drupbtn">Leistungen
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="drupdown-content">
+            <a href="videography.html#filt">Videografía</a>
+            <a href="photography.html#filt" class="actif">Fotografía</a>
+          </div>
+        </div>
+
+        <a href="pricing.html#nav">Preise</a>
+        <a href="about.html#nav">Über uns</a>
+        <a href="contact.html#nav" style="color:#02B7E3;font-weight:bold;">Kontakt</a>
+        <a href="javascript:void(0);" style="font-size:25px;color:#02BBE8" class="icon" onclick="mobNav()">&#9776;</a>
+      </div>
+  </div>
+
+
+  <!-- CONTENT -->
+
+
+<div align="center">
+  <div hidden class="window1">
+    <div align="left" style="font-size:130%;max-width:800px;text-align:center;">
+    <br>
+      <p class="pitch">Freelance Photographer based in Costa Rica <br><br> I like to capture people, food, businesses and their products! <br></p>
+    </div>
+  </div>
+
+  <div class=container>
+        <section>
+
+
+
+
+          <br>
+        </section>
+
+
+  </div>
+  <button hidden class="accordion">Fotografía</button>
+  <div align=left class="panel" style="text-align:center">
+  </div>
+    <h1 id="filt">Fotografie</h1><br>
+    <div  style="max-width:100%;margin-bottom:0px;text-align:center;position:sticky;top:0;z-index:+1;background-color:black;padding-bottom:4px;" class="filter" id="myBtnContainer">
+      <button class="btn activo" onclick="filterSelection('filterDiv')">Alle</button>
+      <button class="btn" onclick="filterSelection('events')">Events</button>
+      <button class="btn" onclick="filterSelection('music')">Musik</button>
+      <button class="btn" onclick="filterSelection('gastro')">Gastro</button>
+      <button hidden class="btn" onclick="filterSelection('commercial')">Firmen</button>
+      <button hidden class="btn" onclick="filterSelection('portrait')">Retrato</button>
+      <button class="btn" onclick="filterSelection('pets')">Haustiere</button>
+    </div>
+
+  <div class="container" id="Container" style="max-width:100%;margin:0px;padding:0px;text-align:center">
+    <div class="roww">
+      <div class="column">
+
+                <img id="div2" class="filterDiv gastro food show" src="../img/portfolio/food-photographer-costa-rica-1.jpg" alt="Vegan Hamburger in restaurant" width="100%">
+                <img id="div2" class="filterDiv events people show" src="../img/portfolio/event-photographer-costa-rica-15.JPG" alt="Activist Playing Snare Drum in Demonstration" width="100%">
+                <img id="div2" class="filterDiv gastro food show" src="../img/portfolio/food-photographer-costa-rica-4.jpg" alt="Mediterranean Food Bread and Olives in Restaurant Served in Wood" width="100%">
+                <img id="div2" class="filterDiv events people show" src="../img/portfolio/event-photographer-costa-rica-12.JPG" alt="People Socializing in The Streets of costa-rica" width="100%">
+                <img id="div2" class="filterDiv gastro food show" src="../img/portfolio/food-photographer-costa-rica-2.jpg" alt="Delicous Looking Pizza with Cheese and Tomato" width="100%">
+                <img id="div2" class="filterDiv music show" src="../img/portfolio/music-muziek-photographer-fotografo-costa-rica-01.JPG" alt="Singer with Microfone in Sunset" width="100%">
+                <img id="div2" class="filterDiv gastro food show" src="../img/portfolio/food-photographer-costa-rica-5.JPG" alt="Sweets in a Shop" width="100%">
+                <img id="div2" class="filterDiv gastro people show" src="../img/portfolio/gastro-fotografo-costa-rica-1.jpg" alt="Couple Eatins Dinner in Restaurant Wadapartja costa-rica" width="100%">
+                <img id="div2" class="filterDiv gastro people show" src="../img/portfolio/gastro-fotografo-costa-rica-2.jpg" alt="Female Friends Eating Together and Talking" width="100%">
+                <img id="div2" class="filterDiv pets show" src="../img/portfolio/pet-dieren-photography-fotografo-costa-rica-3.JPG" alt="Big Rodeshian Ridgeback Dog in The Beach" width="100%">
+                <img id="div2" class="filterDiv events people show" src="../img/portfolio/event-photographer-costa-rica-9.JPG" alt="Relaxed Man in a Crowd" width="100%">
+                <img id="div2" class="filterDiv events people show" src="../img/portfolio/event-photographer-costa-rica-11.JPG" alt="Man with Colorful Glasses in Outdoor Event" width="100%">
+                <img id="div2" class="filterDiv events people show" src="../img/portfolio/event-photographer-costa-rica-13.JPG" alt="Dutch DJ Playing Outdoors Buiten Spelen" width="100%">
+                <img id="div2" class="filterDiv pets show" src="../img/portfolio/pet-dieren-photography-fotografo-costa-rica-4.JPG" alt="Lief Hond met uitgestoken tong" width="100%">
+                <img id="div2" class="filterDiv gastro food show" src="../img/portfolio/food-photographer-costa-rica-3.jpg" alt="Lekker Pizza Wordt Gesneden" width="100%">
+                <img id="div2" class="filterDiv pets show" src="../img/portfolio/pet-dieren-photography-fotografo-costa-rica-5.JPG" alt="Lief Pus" width="100%">
+                <img id="div2" class="filterDiv events people show" src="../img/portfolio/event-photographer-costa-rica-10.JPG" alt="Knappe Mannen in een Menigte" width="100%">
+                <img id="div2" class="filterDiv music show" src="../img/portfolio/music-muziek-photographer-fotografo-costa-rica-0.JPG" alt="Singer Songwriter Spelen in Cultuur Evenement" width="100%">
+                <img id="div2" class="filterDiv events people show" src="../img/portfolio/event-photographer-costa-rica-8.JPG" alt="Smiling Women in a Crowd" width="100%">
+
+
+      </div>
+
+      <div class="column">
+                    <img id="div2" class="filterDiv events people show" src="../img/portfolio/event-photographer-costa-rica-0.JPG" alt="Younh Blonde Woman Having Fun Laughing" width="100%">
+                    <img id="div2" class="filterDiv pets show" src="../img/portfolio/pet-dieren-photography-fotografo-costa-rica-2.JPG" alt="Cute Fluffy White Dog Orange Light" width="100%">
+                    <img id="div2" class="filterDiv events people show" src="../img/portfolio/event-photographer-costa-rica-3.JPG" alt="CostaRican Girl Smile" width="100%">
+                    <img id="div2" class="filterDiv events people show" src="../img/portfolio/event-photographer-costa-rica-6.JPG" alt="Blonde Girl with Sunglasses Chilling Out" width="100%">
+                    <img id="div2" class="filterDiv gastro food show" src="../img/portfolio/food-photographer-costa-rica-7.JPG" alt="Delicious Looking Cupcake Muffin" width="100%">
+                    <img id="div2" class="filterDiv gastro people show" src="../img/portfolio/gastro-fotografo-costa-rica-4.jpg" alt="Waitress Taking Orders in Restaurant Wadapartja costa-rica" width="100%">
+                    <img id="div2" class="filterDiv events people show" src="../img/portfolio/event-photographer-costa-rica-5.JPG" alt="Man Having Fun in Garden Outdoors" width="100%">
+                    <img id="div2" class="filterDiv events people show" src="../img/portfolio/event-photographer-costa-rica-7.JPG" alt="Blonde Girl Drinking Energy Drink in Demonstration" width="100%">
+                    <img id="div2" class="filterDiv gastro food show" src="../img/portfolio/food-photographer-costa-rica-6.JPG" alt="Delicious Chocolate and Vanilla Cakes" width="100%">
+                    <img id="div2" class="filterDiv gastro food show" src="../img/portfolio/food-photographer-costa-rica-8.JPG" alt="Delicous Looking Cupcake Muffin" width="100%">
+                    <img id="div2" class="filterDiv gastro food show" src="../img/portfolio/food-photographer-costa-rica-10.JPG" alt="Delicious Looking Pizza Slice" width="100%">
+                    <img id="div2" class="filterDiv pets show" src="../img/portfolio/pet-dieren-photography-fotografo-costa-rica-1.JPG" alt="Fluffy White Dog with Tongue Out" width="100%">
+                    <img id="div2" class="filterDiv events people show" src="../img/portfolio/event-photographer-costa-rica-1.JPG" alt="Blonde Meisje Lacht Buiten " width="100%">
+                    <img id="div2" class="filterDiv gastro food show" src="../img/portfolio/food-photographer-costa-rica-0.JPG" alt="Lekker Voedsel Catering Diensten" width="100%">
+                    <img id="div2" class="filterDiv events people show" src="../img/portfolio/event-photographer-costa-rica-4.JPG" alt="Costa Ricaans Meisje Buiten in de Zon" width="100%">
+                    <img id="div2" class="filterDiv gastro food show" src="../img/portfolio/food-photographer-costa-rica-9.JPG" alt="Pizza Closeup Shot" width="100%">
+                    <img id="div2" class="filterDiv pets show" src="../img/portfolio/pet-dieren-photography-fotografo-costa-rica-0.JPG" alt="Knappe Hond In Het Gras" width="100%">
+                    <img id="div2" class="filterDiv gastro people show" src="../img/portfolio/gastro-fotografo-costa-rica-3.jpg" alt="Vrowen die Plazier Hebben in een Restaurant" width="100%">
+                    <img id="div2" class="filterDiv music show" src="../img/portfolio/music-muziek-photographer-fotografo-costa-rica-02.JPG" alt="Meisje Speelt Cello Buiten" width="100%">
+
+      </div>
+    </div>
+  </div>
+
+<!-- arriba panel -->
+
+
+</div>
+
+<div class="fixed">
+
+</div>
+
+
+
+
+<div class="lang"><a href="../photography.html">English</a></div>
+
+<div class="footer" style="margin-top: 5px">
+  <p class="gray"> </p>
+    <button class="blue" value="Contact me" class="button">
+      <span onclick="location.href='contact.html#navi';" style="cursor:pointer">Kontakt</span>
+    </button><br><br>
+
+    <a target="_blank" href="https://instagram.com/phv.media"><img class="sm" src="../img/insta.png" alt="instagram"></a>
+      <a target="_blank" href="https://www.linkedin.com/in/pablo-hellmund-a1305373/"><img class="sm" src="../img/linked.png" alt="linkedin"></a>
+      <a target="_blank" href="https://t.me/drpapz"><img class="sm" src="../img/teleg.png" alt="telegram"></a>
+      <a hidden target="_blank" href=""><img class="sm" src="../img/yout.png" alt="youtube"></a>
+
+    <p hidden style="color:gray;font-size:100%"><strong>KVK:</strong> 84088907 <br>
+    <strong>BTW:</strong> NL003913528B88</p>
+    <p style="color:gray">©PHV Media 2025. Alle Rechte vorbehalten.</p>
+</div>
+
+
+<script type="text/javascript">
+
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+// Show filtered elements
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {
+      element.className += " " + arr2[i];
+    }
+  }
+}
+
+// Hide elements that are not selected
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current control button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("activo");
+    current[0].className = current[0].className.replace(" activo", "");
+    this.className += " activo";
+  });
+}
+
+</script>
+<script type="text/javascript" src="../js/accordion.js"></script>
+</body>
+
+</html>
