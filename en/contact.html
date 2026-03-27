@@ -8,7 +8,7 @@
 <!-- bootstrap carousel -->
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/../js/bootstrap.min.js"></script>
 
 
 <link rel="stylesheet" href="../css/gallery.css">
@@ -41,40 +41,39 @@
   <div class="topbanner">
     <img src="../img/phvmedia2.png" class="logo" alt="PHV media">
 
-      <div hidden class="card pitch">
-      </div>
-      <nav class="media" id="navi">
+
+      <nav class="media" id="navi" style="padding-left:0px;padding-right:0px">
         <ul>
-          <a href="index.html"><li>Startseite</li></a>
+          <a href="index.html"><li>Home</li></a>
           <div class="dropdown">
-            <span><a href="index.html#services"><li>Leistungen</li></a></span>
+            <span><a href="index.html#services"><li>Services</li></a></span>
             <div class="dropdown-content">
-              <a href="videography.html#filt"><li>Videografie</li></a>
-              <a href="photography.html#filt"><li>Fotografie</li></a>
+              <a href="photography.html#filt"><li>Photography</li></a>
+              <a href="videography.html#filt"><li>Videography</li></a>
             </div>
           </div>
-          <a href="pricing.html#navi"><li>Preise</li></a>
+          <a href="pricing.html#navi"><li>Pricing</li></a>
           <a hidden href="dev.html"><li>Shop</li></a>
-          <a href="about.html#navi"><li>Über mich</li></a>
-          <a href="contact.html#navi"><li style="color:#02B7E3;font-weight:bold;"  class="active">Kontakt</li></a>
+          <a href="about.html#navi"><li>About</li></a>
+          <a href="contact.html#navi"><li  class="active" style="color:#02B7E3;font-weight:bold;">Contact</li></a>
         </ul>
       </nav>
 
       <div class="topnav" id="nav">
-        <a href="index.html">Startseite</a>
+        <a href="index.html" >Home</a>
         <div class="drupdown">
-          <button class="drupbtn">Leistungen
+          <button class="drupbtn">Services
             <i class="fa fa-caret-down"></i>
           </button>
           <div class="drupdown-content">
-            <a href="videography.html#filt">Videografía</a>
-            <a href="photography.html#filt">Fotografía</a>
+            <a href="photography.html#filt">Photography</a>
+            <a href="videography.html#filt">Videography</a>
           </div>
         </div>
 
-        <a href="pricing.html#nav">Preise</a>
-        <a href="about.html#nav" >Über uns</a>
-        <a href="contact.html#nav" style="color:#02B7E3;font-weight:bold;" class="actif">Kontakt</a>
+        <a href="pricing.html#nav">Pricing</a>
+        <a href="about.html#nav">About</a>
+        <a href="contact.html#nav" class="actif" style="color:#02B7E3;font-weight:bold;">Contact</a>
         <a href="javascript:void(0);" style="font-size:25px;color:#02BBE8" class="icon" onclick="mobNav()">&#9776;</a>
       </div>
   </div>
@@ -87,21 +86,21 @@
   <div  class="row" style="max-width:100%;margin-top:0px;border-bottom:1px solid #02BBE8:">
     <div style="font-size:100%;height:auto;" class="column1">
       <div class="welcome">
-            <h1>Kontakt</h1>
+            <h1>Contact</h1>
             <div class="contactinfo">
               <div><a class="contak" href="mailto:hello@phv.media"><img src="../img/email.png" style="max-width:40px;" alt=""> hello@phv.media</a></div>
-              <div><a class="contak" href="tel:+49 15751902869"><img src="../img/telephone.png" style="max-width:40px;" alt="">+49 15751902869</a></div>
+              <div><a class="contak" href="tel:+4915751902869"><img src="../img/telephone.png" style="max-width:40px;" alt=""> +49 157 5190 2869</a></div>
               <div hidden><a class="contak" onclick="copyKvk()" style="cursor:pointer;"><img src="../img/kvk.png" style="max-width:40px;" alt="KVK_nummer"><strong> KVK:</strong> 84088907</a></div>
-              <div><a class="contak" onclick="refreshIframe()" style="cursor:pointer;"><img src="../img/location.png" style="max-width:40px;" alt="location">Freiburg im Breisgau, Deutschland</a></div>
+              <div><a class="contak" onclick="refreshIframe()" style="cursor:pointer;"><img src="../img/location.png" style="max-width:40px;" alt="location"><strong> Current Location:</strong> Freiburg im Breisgau, Germany</a></div>
             </div>
-            <br>
-            <form netlify style="text-align:left;" spellcheck="false">
-              <h2>Haben Sie Fragen?<br>Stellen Sie sie mir hier:</h2>
 
-              <input type="text" id="client" name="first_name" value="" placeholder="Vollständiger Name">
-              <input type="email" id="email" name="email" value="" placeholder="deine@E-mail.com">
-              <textarea name="message" rows="8" cols="20" placeholder="Schreiben Sie hier Ihre Nachricht" id="message"></textarea>
-              <button type="submit" name="submit" value="submit">Schicken</button>
+            <form netlify style="text-align:left;" spellcheck="false">
+              <h2>Quick Question?<br>Send it here:</h2>
+
+              <input type="text" id="client" name="first_name" value="" placeholder="Full Name">
+              <input type="email" id="email" name="email" value="" placeholder="your@email.address">
+              <textarea name="message" rows="8" cols="20" placeholder="Your message goes here..." id="message"></textarea>
+              <button type="submit" name="submit" value="submit">Send</button>
 
             </form>
           </div>
@@ -113,26 +112,19 @@
 
 
       <!-- MV Map -->
-      <div hidden class="map2" style="filter:grayscale(100%)">
+      <div class="map2" style="filter:grayscale(100%)">
         <iframe name="map" id="mapiframe" style="pointer-events:none;filter:invert(97%)" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-84.83797073364258%2C10.3115837486629%2C-84.81402397155763%2C10.32289909834693&amp;layer=transportmap" style="border: 1px solid black"></iframe>
       </div>
 
-      <!-- CR Map -->
-      <div hidden class="map2" style="filter:grayscale(100%)">
-      <iframe name="map" id="mapiframe" style="pointer-events:none;filter:invert(97%)" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-85.80596923828126%2C9.454508283378388%2C-84.39147949218751%2C10.133848396557326&amp;layer=transportmap" style="border: 1px solid black"></iframe>
-    </div>
-
-      <!-- DE Map -->
-      <div class="map2" style="filter:grayscale(100%)">
-        <iframe name="map" id="mapiframe" style="pointer-events:none;filter:invert(97%)" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=7.614898681640625%2C47.93474792620565%2C7.968521118164063%2C48.05651387203653&amp;layer=transportmap" style="border: 1px solid black"></iframe>
-      </div>
+        <!-- Costa Rica MAP -->
+          <div  hidden class="map2" style="filter:grayscale(100%)">
+              <iframe name="map" id="contactheight" style="filter:invert(100%)"width="100%" height="300px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=-85.37200927734376%2C9.91474384324173%2C-84.32006835937501%2C10.676802582247122&amp;layer=transportmap" style="border: 1px solid black"></iframe><br/><small><a href="https://www.openstreetmap.org/#map=15/10.3183/-84.8293&amp;layers=T">View Larger Map</a></small>
+          </div>
 
           <!-- NL Map -->
           <div hidden class="map2" style="filter:grayscale(100%)">
             <iframe name="map" id="mapiframe" style="pointer-events:none;filter:invert(97%)" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=6.462879180908203%2C53.186287573913305%2C6.6544532775878915%2C53.244262570178755&amp;layer=transportmap" style="border: 1px solid black"></iframe>
           </div>
-
-
 
     </div>
   </div>
@@ -144,12 +136,13 @@
 </div>
 </div>
 
-<div class="lang"><a href="../contact.html">English</a></div>
+
+<div class="lang"><a href="../contact.html">Deutsch</a></div>
 
 <div class="footer" style="margin-top: 5px">
   <p class="gray"> </p>
     <button class="blue" value="Contact me" class="button">
-      <span onclick="location.href='contact.html#navi';" style="cursor:pointer">Kontakt</span>
+      <span onclick="location.href='contact.html#navi';" style="cursor:pointer">Contact</span>
     </button><br><br>
 
     <a target="_blank" href="https://instagram.com/phv.media"><img class="sm" src="../img/insta.png" alt="instagram"></a>
@@ -159,7 +152,7 @@
 
     <p hidden style="color:gray;font-size:100%"><strong>KVK:</strong> 84088907 <br>
     <strong>BTW:</strong> NL003913528B88</p>
-    <p style="color:gray">©PHV Media 2025. Alle Rechte vorbehalten.</p>
+    <p style="color:gray">©PHV Media 2023. All Rights Reserved.</p>
 </div>
 
 <script type="text/javascript">
